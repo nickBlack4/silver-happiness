@@ -1,3 +1,6 @@
+![Memory](https://github.com/nickBlack4/silver-happiness/blob/master/portfolio.png "App Picture")
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
