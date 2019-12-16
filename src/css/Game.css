@@ -1,0 +1,114 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+/* parent container */
+.game-container {
+  text-align: center;
+  max-width: 940px;
+  margin: 20px auto 0 auto;
+}
+
+/* header -- title, moves, score */
+.game-header {
+  background-color: rgb(114, 16, 16);
+  padding: 10px;
+  color: white;
+  border-radius: 300px 300px 0 0;
+  border: 1px solid black;
+  border-bottom: none;
+  box-shadow: 0px 0px 11px #000;
+}
+
+.game-header h1 {
+  font-size: 4em;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 3px 1px 5px #000;
+  margin: 0;
+}
+
+/* restart the game */
+.restart-button {
+  padding: 10px;
+  border: 1px solid #000;
+  color: white;
+  background-color: rgb(73, 73, 73);
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 7em;
+  font-size: 1em;
+}
+
+.restart-button:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+/* rules for Memory cards */
+.card {
+  margin: 5px;
+  height: 150px;
+  width: 150px;
+  border: 1px solid rgb(7, 7, 7);
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px #000;
+}
+
+/* matched pair rules */
+.matched {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+
+/* container for Memory cards */
+.card-container {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(157, 190, 154);
+  padding: 10px 0;
+  border: 2px solid black;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 1px 2px 20px #000;
+}
+
+/* Media Queries */
+
+/* Pixel 2 */
+@media only screen and (max-width: 414px) {
+  .card {
+    height: 85px;
+    width: 85px;
+  }
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (max-width: 375px) {
+  .card {
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+  }
+}
+
+/* iPhone 5 */
+@media only screen and (max-width: 320px) {
+  .card {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) {
+  .card {
+    height: 145px;
+    width: 145px;
+    border-radius: 5px;
+  }
+}
+
+
